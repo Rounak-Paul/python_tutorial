@@ -1,2 +1,5 @@
-print("Test from Python Script")
-print(16 * 32)
+import test_file
+
+print(__name__)
+
+print(test_file)
