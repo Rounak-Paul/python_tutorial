@@ -1,54 +1,32 @@
-# Variables
+empty_list = []
+not_empty_list = [1,2,3,4,5]
 
-x = 5
-y = "Duke"
+empty_str = []
+not_empty_str = "Happy New Year!"
 
-print(x)
-print(y)
+#check if list if empty
 
-# Names can be anything without space/ not starting with number/ not containing math_symbols
-# Examples of not valid names: 
-# 2name0fvar = 123
-# my-var = "abc"
-# my var = 12
+# result = (len(empty_list) != 0)
+# print(f"list is not empty: {result}")
 
-# Python Built in Data Types
+# result = (len(not_empty_list) != 0)
+# print(f"list is not empty: {result}")
 
-x_str = "Hello" # str
-print(x_str + " is " + type(x))
+# THE BOOL TYPECAST
 
-x_int = 2 # int
-print(x_int + " is " + type(x_int))
+result = bool(empty_list)
+print(f"list is not empty: {result}")
 
-x_float = 10.2 # float
-print(x_float + " is " + type(x_float))
+result = bool(not_empty_list)
+print(f"list is not empty: {result}")
 
-x_complex = 1j # complex
-print(x_complex + " is " + type(x_complex))
+if (bool(not_empty_list)):
+    # Do something
+    pass
 
-x_list = [1, 2, 3, 4] # list
-print(x_list + " is " + type(x_list))
+result = bool(empty_str)
+print(f"str is not empty: {result}")
 
-x_tuple = (1, 2, 3, 4) # tuple
-print(x_tuple + " is " + type(x_tuple))
+result = bool(not_empty_str)
+print(f"str is not empty: {result}")
 
-x_range = range(6) # range
-print(x_range + " is " + type(x_range))
-
-x_dict = { # dict
-    "name" : "Duke",
-    "age" : 23
-}
-print(x_dict + " is " + type(x_dict))
-
-x_set = set({"a", "b", "c", "a"}) # set
-print(x_set + " is " + type(x_set))
-
-x_bool = True # bool
-print(x_bool + " is " + type(x_bool))
-
-x_bytes = b"Hello" # bytes
-print(x_bytes + " is " + type(x_bytes))
-
-x_none = None # None
-print(f"{x_none} is {type(x_none)}")
