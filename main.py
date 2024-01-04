@@ -113,7 +113,7 @@ my_list.remove('apple')
 print(my_list) # [1, True, 1, 'book', 'apple', 1]
 
 # del method
-del my_list[3]
+del my_list[3]  
 print(my_list) # [1, True, 1, 'apple', 1]
 
 # del my_list # does not exists any more
