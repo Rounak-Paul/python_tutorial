@@ -30,19 +30,28 @@ Output: "leotcede"
 
 
 
-s = "rounak" # raunok
+s = "hello"  # holle
 
-s = list(s)
-v = ["a","e","i","o","u"]
-val = []
-pos = []
+s = list(s) # typecast
+print(s)
+
+v = ["a", "e", "i", "o", "u"]
+
+v_index = []
+v_val = []
+
 for i in range(len(s)):
     if s[i].lower() in v:
-        val.append(s[i])
-        pos.append(i)
-val = val[::-1]
-for i in range(len(pos)):
-    s[pos[i]] = val[i]
+        v_val.append(s[i])
+        v_index.append(i)
+
+print(v_index)
+print(v_val)
+
+v_val = v_val[::-1]
+for i in range(len(v_index)):
+    s[v_index[i]] = v_val[i]
+
 output = ''.join(s)
 
-print(output)
+print(output) # raunok
