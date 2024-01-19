@@ -30,11 +30,7 @@ Output: "leotcede"
 
 
 
-s = "tutorial" # tatiroul
-
-# [u,o,i,a]
-# [1,3,5,6]
-# [a,i,o,u]
+s = "rounak" # raunok
 
 s = list(s)
 v = ["a","e","i","o","u"]
