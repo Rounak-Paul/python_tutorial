@@ -80,3 +80,6 @@ def s_mult(vector, k=6):
 
 print(s_mult([3,4,5], k=0))
 print(s_mult([3,4,5]))
+
+
+
