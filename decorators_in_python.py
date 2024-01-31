@@ -21,15 +21,20 @@ say_hello()
 import time
 
 def timeit(func):
-    def wrapper():
+    def wrapper(temp):
         t_start = time.time()
-        func()
+        i = func(temp)
         print(f"ex time (s): {time.time() - t_start}")
+        return i
     return wrapper
 
-@timeit
-def mul():
-    for i in range(10000000):
-        i*i
+n = 100000000
 
-mul()
+@timeit
+def mul(val):
+    for i in range(val):
+        i*i
+    return i
+
+last_val = mul(n)
+print(last_val)
